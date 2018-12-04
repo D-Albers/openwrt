@@ -8,7 +8,7 @@ pool:
 
 steps:
 - script: |
-    apt-get update && sudo apt-get install libpam0g-dev 
+    sudo apt-get update && sudo apt-get install libpam0g-dev 
     displayName: 'dep'
 
 - script: |
