@@ -8,9 +8,14 @@ pool:
 
 steps:
 - script: |
-    sudo apt-get update && sudo apt-get install libpam0g-dev
-    make
-  displayName: 'dep'
+    ./scripts/feeds update
+    ./scripts/feeds install -a
+  displayName: 'get packages'
+  
+steps:
+- script: |
+    ./scripts/feeds install -a
+  displayName: 'install package'
 
 - script: |
     make
