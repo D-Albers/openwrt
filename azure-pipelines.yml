@@ -12,7 +12,6 @@ steps:
     ./scripts/feeds install -a
   displayName: 'get packages'
   
-steps:
 - script: |
     ./scripts/feeds install -a
   displayName: 'install package'
