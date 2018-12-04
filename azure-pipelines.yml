@@ -8,6 +8,6 @@ pool:
 
 steps:
 - script: |
-    configure
+    ./configure
     make
   displayName: 'make'
