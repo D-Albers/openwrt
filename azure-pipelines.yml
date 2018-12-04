@@ -8,7 +8,7 @@ pool:
 
 steps:
 - script: |
-    sudo apt-get update && sudo apt-get install libpam0g 
+    sudo apt-get update && sudo apt-get install libpam0g libssl-dev
   displayName: 'dep'
 
 - script: |
