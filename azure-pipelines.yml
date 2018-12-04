@@ -8,6 +8,9 @@ pool:
 
 steps:
 - script: |
-    ./configure
+    apt-get update && sudo apt-get install libpam0g-dev 
+    displayName: 'dep'
+
+- script: |
     make
   displayName: 'make'
