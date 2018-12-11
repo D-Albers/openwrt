@@ -17,9 +17,5 @@ steps:
   displayName: 'install package'
 
 - script: |
-    make oldconfig
-  displayName: 'make oldconfig'
-
-- script: |
     make -j
   displayName: 'make -j'
